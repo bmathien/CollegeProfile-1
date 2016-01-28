@@ -14,6 +14,8 @@
 		08BAA4651C593E4900C3B90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BAA4631C593E4900C3B90F /* LaunchScreen.storyboard */; };
 		08BAA4701C593E4900C3B90F /* CollegeProfile_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAA46F1C593E4900C3B90F /* CollegeProfile_1Tests.swift */; };
 		08BAA47B1C593E4900C3B90F /* CollegeProfile_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAA47A1C593E4900C3B90F /* CollegeProfile_1UITests.swift */; };
+		08BAA4891C593EBB00C3B90F /* DeatilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAA4881C593EBB00C3B90F /* DeatilViewController.swift */; };
+		08BAA48B1C593ED700C3B90F /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAA48A1C593ED700C3B90F /* College.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		08BAA4761C593E4900C3B90F /* CollegeProfile#1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CollegeProfile#1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BAA47A1C593E4900C3B90F /* CollegeProfile_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeProfile_1UITests.swift; sourceTree = "<group>"; };
 		08BAA47C1C593E4900C3B90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BAA4881C593EBB00C3B90F /* DeatilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeatilViewController.swift; sourceTree = "<group>"; };
+		08BAA48A1C593ED700C3B90F /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				08BAA45A1C593E4900C3B90F /* AppDelegate.swift */,
 				08BAA45C1C593E4900C3B90F /* ViewController.swift */,
 				08BAA45E1C593E4900C3B90F /* Main.storyboard */,
+				08BAA48A1C593ED700C3B90F /* College.swift */,
+				08BAA4881C593EBB00C3B90F /* DeatilViewController.swift */,
 				08BAA4611C593E4900C3B90F /* Assets.xcassets */,
 				08BAA4631C593E4900C3B90F /* LaunchScreen.storyboard */,
 				08BAA4661C593E4900C3B90F /* Info.plist */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08BAA45D1C593E4900C3B90F /* ViewController.swift in Sources */,
+				08BAA4891C593EBB00C3B90F /* DeatilViewController.swift in Sources */,
 				08BAA45B1C593E4900C3B90F /* AppDelegate.swift in Sources */,
+				08BAA48B1C593ED700C3B90F /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
