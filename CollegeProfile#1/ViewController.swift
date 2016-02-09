@@ -22,9 +22,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        colleges.append(College(Name: "ISU", Location: "Normal, IL", Enrollment: "20,000", Image: UIImage(named: "isu")!))
-        colleges.append(College(Name: "Notre Dame", Location: "Notre Dame, IN", Enrollment: "20,000", Image: UIImage(named: "nd")!))
-        colleges.append(College(Name: "Harper College", Location: "Palatine, IL", Enrollment: "5,000", Image: UIImage(named: "harper")!))
+        colleges.append(College(Name: "ISU", Location: "Normal, IL", Enrollment: "20,000", Image: UIImage(named: "isu")!, Website: "illinoisstate.edu/"))
+        colleges.append(College(Name: "Notre Dame", Location: "Notre Dame, IN", Enrollment: "20,000", Image: UIImage(named: "nd")!, Website: "illinoisstate.edu/"))
+        colleges.append(College(Name: "Harper College", Location: "Palatine, IL", Enrollment: "5,000", Image: UIImage(named: "harper")!, Website: "illinoisstate.edu/"))
     }
 
     @IBAction func editButtonTapped(sender: AnyObject)
@@ -45,13 +45,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         myAlert.addTextFieldWithConfigurationHandler { (enrollmentTF) -> Void in
             enrollmentTF.placeholder = "Add College enrollment"
         }
+        myAlert.addTextFieldWithConfigurationHandler { (websiteTF) -> Void in
+            websiteTF.placeholder = "Add web address"
+        }
         
         let addAction = UIAlertAction(title: "Add", style: .Default) { (addAction) -> Void in
             let collegeName = myAlert.textFields![0]
             let collegeLocale = myAlert.textFields![1]
             let collegeNUmber = myAlert.textFields![2]
+            let collegeWeb = myAlert.textFields![3]
             
-            self.colleges.append(College(Name: collegeName.text!, Location: collegeLocale.text!, Enrollment: collegeNUmber.text!))
+            self.colleges.append(College(Name: collegeName.text!, Location: collegeLocale.text!, Enrollment: collegeNUmber.text!, Website: collegeWeb.text!))
             self.myTableView.reloadData()
             }
         myAlert.addAction(addAction)

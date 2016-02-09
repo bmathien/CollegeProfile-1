@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sf2-pm-A3F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sf2-pm-A3F">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -97,51 +97,79 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRg-tP-V0c">
                                 <rect key="frame" x="20" y="72" width="240" height="128"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="JwV-Wd-Pkb"/>
                                     <constraint firstAttribute="height" constant="128" id="bJa-Bq-Gcs"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X37-Lm-oyL">
-                                <rect key="frame" x="20" y="213" width="240" height="30"/>
+                                <rect key="frame" x="20" y="207" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dx-KS-9k7">
-                                <rect key="frame" x="20" y="251" width="240" height="30"/>
+                                <rect key="frame" x="20" y="243" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cuW-a9-njy">
-                                <rect key="frame" x="20" y="289" width="240" height="30"/>
+                                <rect key="frame" x="20" y="280" width="240" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbE-x5-gNh">
-                                <rect key="frame" x="123" y="332" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="123" y="386" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="0.16891006929999999" blue="0.33764449730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="8Bz-jP-sOk" eventType="touchUpInside" id="ovn-t9-gfX"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KT0-pR-24q">
+                                <rect key="frame" x="20" y="318" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpP-Eq-h5N">
+                                <rect key="frame" x="112" y="356" width="56" height="30"/>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="8Bz-jP-sOk" eventType="touchUpInside" id="Pd1-my-Lih"/>
+                                    <action selector="websiteBUttonTapped:" destination="8Bz-jP-sOk" eventType="touchUpInside" id="cYq-fb-9L8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cuW-a9-njy" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="KZL-UB-SBZ"/>
                             <constraint firstItem="9dx-KS-9k7" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="NNU-9T-tgG"/>
                             <constraint firstItem="pRg-tP-V0c" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="Nnc-AG-dZf"/>
+                            <constraint firstItem="UpP-Eq-h5N" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="fni-2F-ufF"/>
+                            <constraint firstItem="KT0-pR-24q" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="gts-jK-BN1"/>
                             <constraint firstItem="X37-Lm-oyL" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="x4t-j7-NJX"/>
                             <constraint firstItem="TbE-x5-gNh" firstAttribute="centerX" secondItem="K2p-HB-b61" secondAttribute="centerX" id="zLu-Fx-XQa"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5f4-p3-F1K" appends="YES" id="Jrf-gc-1fR"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="enrollmentTextField" destination="cuW-a9-njy" id="bbl-Rp-jq9"/>
                         <outlet property="locationTextField" destination="9dx-KS-9k7" id="IyM-ty-ryb"/>
                         <outlet property="myImageView" destination="pRg-tP-V0c" id="Kgc-B3-29Y"/>
                         <outlet property="nameTextField" destination="X37-Lm-oyL" id="tAn-W7-h1N"/>
+                        <outlet property="websiteTextField" destination="KT0-pR-24q" id="xKC-SY-xbN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VF-Le-plS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5f4-p3-F1K">
+                    <connections>
+                        <action selector="imageTapped:" destination="8Bz-jP-sOk" id="xOF-IV-U8s"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1681" y="429"/>
         </scene>
